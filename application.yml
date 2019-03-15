@@ -1,1 +1,14 @@
-abc
+spring:
+    profiles:
+        active:
+        - dev
+---
+spring:
+    profiles: dev
+    application:
+        name: config-server
+---
+spring:
+    profiles: test
+    application:
+        name: config-server
